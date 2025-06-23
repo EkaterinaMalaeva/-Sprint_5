@@ -9,11 +9,14 @@ class RegistrationLocators:
     CREATE_ACCOUNT_BTN = (By.XPATH, "//button[text()='Создать аккаунт']")
     USERNAME_TEXT = (By.CSS_SELECTOR, "h3.profileText.name")
     SUBMIT_BTN = (By.XPATH, "//button[text()='Войти']")
+    LOGOUT_BTN = (By.XPATH, "//button[text()='Выйти']")
+    ERROR_HINT = (By.XPATH, "//*[contains(text(), 'Ошибка')]")
 
 class LoginLocators:
     EMAIL_INPUT = (By.NAME, "email")
     PASSWORD_INPUT = (By.NAME, "password")
     SUBMIT_BTN = (By.XPATH, "//button[text()='Войти']")
+    LOGOUT_BTN = (By.XPATH, "//button[text()='Выйти']")
 
 class CreatePostLocators:
     POST_BTN = (By.XPATH, "//button[text()='Разместить объявление']")
@@ -32,3 +35,4 @@ class CreatePostLocators:
     AVATAR_BTN = (By.CLASS_NAME, "avatar__container")
     PROFILE_HEADER = (By.XPATH, "//h2[text()='Профиль']")
     MODAL_AUTH_HEADER = (By.XPATH, "//h1[contains(text(), 'Чтобы разместить объявление')]")
+    CONDITION_USED_RADIO = (By.XPATH, "//input[@type='radio' and @value='Б/У']")
